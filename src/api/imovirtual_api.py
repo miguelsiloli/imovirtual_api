@@ -260,13 +260,11 @@ if __name__ == "__main__":
     try:
         data = imv.query_imovirtual(
             transaction_type="comprar",
-            location="porto",  # Multiple locations
+            location="porto/porto",  # Multiple locations
             price_min=100,
-            price_max=100000,
-            area_min=100,
-            area_max=200,
-            rooms_number=["ONE", "TWO", "THREE"]
+            price_max=100000
         )
+        print(data)
         data.to_csv("data.csv")
     except requests.RequestException as e:
         print(f"An error occurred: {e}")

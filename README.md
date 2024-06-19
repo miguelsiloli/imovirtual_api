@@ -157,6 +157,25 @@ results = api.query_imovirtual(
 print(results)
 ```
 
+### About locations
+
+Location params are nested, from the top parent province, to parish/council level and street name (not every listing displays this information for privacy). If you want to query a parish, you need to place the **full path**:
+
+```python
+from imovirtual_api.imovirtual_api import ImovirtualAPI
+
+api = ImovirtualAPI()
+
+results = api.query_imovirtual(
+    transaction_type='arrendar',
+    property_type='apartamento',
+    location='porto/porto',
+)
+
+print(results)
+```
+
+
 ## Future Work
 
 - Fix any bugs and maintain code
