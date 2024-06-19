@@ -10,7 +10,7 @@ setup(
     packages=find_packages(where='src'), 
     package_dir={'': 'src'},
     long_description_content_type='text/markdown',
-    url='https://github.com/yourusername/mypackage',
+    url='https://github.com/miguelsiloli/imovirtual_api',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',

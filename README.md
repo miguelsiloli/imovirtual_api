@@ -1,8 +1,7 @@
 # ImovirtualAPI
 
-[imovirtual](https://www.imovirtual.com/)
 
-ImovirtualAPI is a Python package for querying real estate listings from the Imovirtual website. It allows users to search for properties based on various criteria and retrieve the data in either JSON format or as a pandas DataFrame.
+ImovirtualAPI is a Python package for querying real estate listings from the [imovirtual](https://www.imovirtual.com/) website. It allows users to search for properties based on various criteria and retrieve the data in either JSON format or as a pandas DataFrame.
 
 
 The querying properties available are the same as the filtering properties in the website.
@@ -130,10 +129,8 @@ from imovirtual_api.imovirtual_api import ImovirtualAPI
 
 api = ImovirtualAPI()
 
-# Query for apartments for sale in Lisbon
 results = api.query_imovirtual(transaction_type='comprar', location='lisboa')
 
-# Print the results as a DataFrame
 print(results)
 ```
 
