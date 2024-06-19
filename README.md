@@ -139,7 +139,7 @@ print(results)
 
 ### Advanced Query Example with Multiple Pages and JSON Response
 
-```
+```python
 from imovirtual_api.imovirtual_api import ImovirtualAPI
 
 api = ImovirtualAPI()
