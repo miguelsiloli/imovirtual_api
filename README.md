@@ -85,6 +85,7 @@ erDiagram
 
 ## Project Structure
 
+```
 my_project/
 │
 ├── imovirtual_api/
@@ -94,7 +95,7 @@ my_project/
 │   ├── __init__.py
 │   └── test_imovirtual_api.py
 └── README.md
-
+```
 
 
 ## Installation
@@ -143,7 +144,6 @@ from imovirtual_api.imovirtual_api import ImovirtualAPI
 
 api = ImovirtualAPI()
 
-# Query for apartments for rent in Porto with specific criteria
 results = api.query_imovirtual(
     transaction_type='arrendar',
     property_type='apartamento',
@@ -157,7 +157,6 @@ results = api.query_imovirtual(
     json=True
 )
 
-# Print the JSON results
 print(results)
 ```
 
