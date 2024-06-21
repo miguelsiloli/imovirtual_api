@@ -148,7 +148,7 @@ results = api.query_imovirtual(
     price_min=500,
     price_max=1500,
     area_min=50,
-    rooms_number=['1', '2'],
+    rooms_number=['ONE', 'TWO', 'THREE],
     sort_by='price',
     sort_direction='ASC',
     json=True
@@ -181,3 +181,5 @@ print(results)
 - Fix any bugs and maintain code
 - Implement all the query params
 - Improve testing and documentation
+
+Perhaps it would be helpful to have some string standardization for string inputs and other sorts of **poka-yoke**.
