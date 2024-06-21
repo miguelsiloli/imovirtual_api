@@ -85,7 +85,7 @@ erDiagram
 ## Project Structure
 
 ```
-my_project/
+imovirtualapi/
 │
 ├── imovirtual_api/
 │   ├── __init__.py
